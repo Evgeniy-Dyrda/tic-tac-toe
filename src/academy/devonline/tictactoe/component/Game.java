@@ -29,13 +29,13 @@ import java.util.Random;
 public class Game {
     private final DataPrinter dataPrinter;
     private final ComputerMove computerMove;
-    private final UerMove userMove;
+    private final UserMove userMove;
     private final DrawVerifier drawVerifier;
     private final WinnerVerifier winnerVerifier;
 
     public Game(final DataPrinter dataPrinter,
                 final ComputerMove computerMove,
-                final UerMove userMove,
+                final UserMove userMove,
                 final DrawVerifier drawVerifier,
                 final WinnerVerifier winnerVerifier) {
         this.dataPrinter = dataPrinter;
