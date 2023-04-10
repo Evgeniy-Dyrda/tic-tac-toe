@@ -21,9 +21,10 @@ package academy.devonline.tictactoe;
  * @author devonline
  * @link <a href="http://devonline.academy/java">...</a>
  */
-public final class Launcher {
-    public static void main(final String[] args) {
-        final Game game = new Game(new DataPrinter(), new ComputerMove(), new UerMove(), new DrawVerifier(), new WinnerVerifier());
-        game.play();
-    }
+
+
+public class DrawVerifier {
+ public boolean isDraw(final GameTable gameTable) {
+  return false;
+ }
 }
