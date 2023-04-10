@@ -35,10 +35,10 @@ public class GameTable {
     }
 
     public char getSign(final Cell cell) {
-        return table[cell.getRow()][cell.getRow()];
+        return table[cell.getRow()][cell.getCol()];
     }
 
     public void setSign(final Cell cell, final char sign) {
-        table[cell.getRow()][cell.getRow()] = sign;
+        table[cell.getRow()][cell.getCol()] = sign;
     }
 }
