@@ -17,6 +17,8 @@
 
 package academy.devonline.tictactoe;
 
+import academy.devonline.tictactoe.component.*;
+
 /**
  * @author devonline
  * @link <a href="http://devonline.academy/java">...</a>

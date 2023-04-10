@@ -15,7 +15,9 @@
  *
  */
 
-package academy.devonline.tictactoe;
+package academy.devonline.tictactoe.component;
+
+import academy.devonline.tictactoe.model.GameTable;
 
 /**
  * @author devonline
@@ -23,8 +25,12 @@ package academy.devonline.tictactoe;
  */
 
 
-public class DrawVerifier {
- public boolean isDraw(final GameTable gameTable) {
+public class WinnerVerifier {
+ public boolean isUserWin(final GameTable gameTable) {
+  return false;
+ }
+
+ public boolean isComputerWin(final GameTable gameTable) {
   return false;
  }
 }

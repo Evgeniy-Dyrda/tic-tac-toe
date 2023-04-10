@@ -15,7 +15,9 @@
  *
  */
 
-package academy.devonline.tictactoe;
+package academy.devonline.tictactoe.component;
+
+import academy.devonline.tictactoe.model.GameTable;
 
 /**
  * @author devonline
@@ -23,8 +25,8 @@ package academy.devonline.tictactoe;
  */
 
 
-public class ComputerMove {
- public void make(final GameTable gameTable) {
-
+public class DrawVerifier {
+ public boolean isDraw(final GameTable gameTable) {
+  return false;
  }
 }
