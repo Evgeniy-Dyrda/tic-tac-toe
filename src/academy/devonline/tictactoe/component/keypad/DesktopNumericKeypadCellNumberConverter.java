@@ -15,19 +15,37 @@
  *
  */
 
-package academy.devonline.tictactoe.component;
+package academy.devonline.tictactoe.component.keypad;
 
+import academy.devonline.tictactoe.component.CellNumberConverter;
 import academy.devonline.tictactoe.model.Cell;
 
 /**
  * @author devonline
  * @link <a href="http://devonline.academy/java">...</a>
  */
-public interface CellNumberConverter {
+public class DesktopNumericKeypadCellNumberConverter implements CellNumberConverter {
+    private final char[][] mapping = {
+            {'7', '8', '9'},
+            {'4', '5', '6'},
+            {'1', '2', '3'}
+    };
 
+    @Override
+    public Cell toCell(final char number) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (mapping[i][j] == number) {
+                    return new Cell(i, j);
+                }
+            }
+        }
+        return null;
+    }
 
-    Cell toCell(char number);
-
-    char toNumber(Cell cell);
+    @Override
+    public char toNumber(final Cell cell) {
+        return mapping[cell.getRow()][cell.getCol()];
+    }
 
 }
