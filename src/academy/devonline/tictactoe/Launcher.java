@@ -25,7 +25,7 @@ import academy.devonline.tictactoe.component.*;
  */
 public final class Launcher {
     public static void main(final String[] args) {
-        final Game game = new Game(new DataPrinter(), new ComputerMove(), new UserMove(), new DrawVerifier(), new WinnerVerifier());
+        final Game game = new Game(new DataPrinter(), new ComputerMove(), new UserMove(), new CellVerifier(), new WinnerVerifier());
         game.play();
     }
 }
